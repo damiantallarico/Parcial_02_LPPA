@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Formulario de Inicio de Sesión.
+            </h1>
+        </header>
+        <form id="formulario">
+            <fieldset>
+                <legend>Credenciales:</legend>
+                <section>
+                    <div>
+                        <label for="mail">E-mail:</label>
+                        <input class="input_fill_in" name="mail" id="mail" placeholder="Ingrese su E-mail">
+                        <label>
+                            <p id="error_mail" class="esconder_error">El mail debe contener: "username@domain.com".</p>                        
+                        </label>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input class="input_fill_in" name="password" id="password" placeholder="Ingrese su password">
+                        <label>
+                            <p id="error_password" class="esconder_error">El password debe contener entre 6 y 10 caracteres.</p>
+                        </label>
+                    </div>
+                    <div class="space_buttons">
+                        <input class="button" type="submit" value="Iniciar sesión">
+                        <input class="button" type="reset" value="Limpiar">
+                    </div>
+            </fieldset>
+        </form>
+        <section id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>El inicio de sesión no se ha realizado correctamente!</p>
+            </div>
+        </section>           
+        <footer>
+            <h2>Segundo Parcial - LPPA - Damián Tallarico</h2>
+        </footer>
+    </body>
+    </html>
