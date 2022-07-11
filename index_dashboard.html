@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles_dashboard.css">
+        <script src="script_dashboard.js"></script>
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Dashboard - Cierre de sesión.
+            </h1>
+        </header>
+        <form id="dashboard">
+            <fieldset>
+                <legend>Dashboard:</legend>
+                <section>
+                    <div class="tabla">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id:</th>
+                                    <th>Nombre:</th>
+                                    <th>Username:</th>
+                                    <th>E-mail:</th>
+                                    <th>Teléfono:</th>
+                                    <th>Website:</th>
+                                </tr>
+                            </thead>
+                            <tbody id="data"></tbody>
+                        </table>
+                    </div>
+                    <div class="space_buttons">
+                        <input class="button" type="submit" value="Cerrar sesión">
+                    </div>
+            </fieldset>
+        </form>
+        <section id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>No se han podido recuperar los datos correctamente!</p>
+            </div>
+        </section>           
+        <footer>
+            <h2>Segundo Parcial - LPPA - Damián Tallarico</h2>
+        </footer>
+    </body>
+    </html>
